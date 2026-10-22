@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="PN Electronics (Pramod Electrical & Technical Services), Balaghat (M.P.) - Complete Electrical, Electronics, Mobile, Computer, CCTV, Networking & Industrial Machine Maintenance. Your Technology Partner for a Better Tomorrow.">
+  <meta name="theme-color" content="#0a1128">
+  <title>PN Electronics | Electrical, IT & Networking | Balaghat</title>
+  <link rel="icon" type="image/jpeg" href="pn-electronics-logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --pr: #0ca74a;
+      --prd: #05883a;
+      --pr-light: #e8f9ef;
+      --sc: #1f4289;
+      --scd: #0c265a;
+      --cyan: #06b6d4;
+      --gold: #ffb800;
+      --bg: #ffffff;
+      --bg2: #f8fafc;
+      --card-bg: #ffffff;
+      --tx: #0f172a;
+      --mu: #64748b;
+      --bd: #e2e8f0;
+      --success: #16a34a;
+      --shadow-sm: 0 4px 12px rgba(12, 167, 74, 0.06);
+      --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --shadow-lg: 0 20px 50px rgba(15, 23, 42, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b0f19;
+      --bg2: #111827;
+      --card-bg: #162032;
+      --tx: #f1f5f9;
+      --mu: #94a3b8;
+      --bd: #1e293b;
+      --pr-light: rgba(12, 167, 74, 0.15);
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 110px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--tx);
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 70px;
+    }
+
+    @media (min-width: 769px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: var(--pr);
+      text-decoration: none;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .w {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* TOP ANNOUNCEMENT BAR */
+    .topbar {
+      background: var(--scd);
+      color: #cbd5e1;
+      padding: 8px 0;
+      font-size: 13px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .topbar .w {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .topbar-phone {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* MAIN HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--bd);
+      transition: background 0.3s ease;
+    }
+
+    [data-theme="dark"] header {
+      background: rgba(11, 15, 25, 0.94);
+    }
+
+    header .w {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo-img {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 119, 182, 0.35);
+      border: 2px solid var(--pr);
+      flex-shrink: 0;
+      background: #ffffff;
+    }
+
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--sc), var(--pr));
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      box-shadow: 0 6px 16px rgba(12, 167, 74, 0.3);
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--sc);
+      line-height: 1.15;
+    }
+
+    [data-theme="dark"] .logo-text {
+      color: #ffffff;
+    }
+
+    .logo-text span {
+      color: var(--pr);
+    }
+
+    .logo-text small {
+      display: block;
+      font-size: 11px;
+      color: var(--mu);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    nav.m {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    nav.m a {
+      color: var(--tx);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav.m a:hover {
+      color: var(--pr);
+    }
+
+    .header-ctrls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* THEME & LANGUAGE BUTTONS */
+    .icon-btn {
+      background: var(--bg2);
+      border: 1px solid var(--bd);
+      border-radius: 8px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      color: var(--tx);
+      font-size: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn:hover {
+      border-color: var(--pr);
+      color: var(--pr);
+    }
+
+    .lg {
+      display: flex;
+      border: 1.5px solid var(--pr);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .lg button {
+      border: 0;
+      background: transparent;
+      color: var(--pr);
+      padding: 6px 12px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lg button.on {
+      background: var(--pr);
+      color: #fff;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      font-size: 26px;
+      cursor: pointer;
+      color: var(--tx);
+    }
+
+    /* BUTTONS */
+    .btn {
+      background: var(--pr);
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      padding: 11px 22px;
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      transition: all 0.22s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(12, 167, 74, 0.28);
+    }
+
+    .btn:hover {
+      background: var(--prd);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(12, 167, 74, 0.38);
+      color: #fff;
+    }
+
+    .btn.o {
+      background: transparent;
+      border: 2px solid var(--pr);
+      color: var(--pr);
+      box-shadow: none;
+    }
+
+    .btn.o:hover {
+      background: var(--pr-light);
+      transform: translateY(-2px);
+    }
+
+    .btn.wa {
+      background: #25d366;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn.wa:hover {
+      background: #1eb956;
+    }
+
+    .btn-sm {
+      padding: 8px 14px;
+      font-size: 13px;
+      border-radius: 6px;
+    }
+
+    /* BANNER / HERO */
+    .banner {
+      position: relative;
+      background: radial-gradient(circle at 75% 35%, #1f4289 0%, #0c265a 45%, #060f26 100%);
+      color: #fff;
+      padding: 75px 0 65px;
+      overflow: hidden;
+    }
+
+    #c3d {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.35;
+    }
+
+    .banner .w {
+      position: relative;
+      z-index: 2;
+    }
+
+    .banner-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .banner-text h1 {
+      margin: 0 0 14px;
+      font-size: clamp(28px, 4.4vw, 46px);
+      line-height: 1.18;
+      font-weight: 800;
+      text-shadow: 0 4px 30px rgba(12, 167, 74, 0.45);
+      letter-spacing: -0.5px;
+    }
+
+    .tags {
+      font-weight: 700;
+      color: #94e5b9;
+      font-size: 15.5px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    .banner p.lead {
+      margin: 10px 0 20px;
+      font-size: 17.5px;
+      opacity: 0.95;
+      max-width: 620px;
+      line-height: 1.6;
+    }
+
+    .banner-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 24px 0 20px;
+    }
+
+    .who {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      padding: 10px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      max-width: fit-content;
+      font-size: 14.5px;
+    }
+
+    .av {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--pr);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 20px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ==========================================================================
+       INTERACTIVE ORBITING LOGO & REVOLVING TOOLS/PARTS STYLES
+       ========================================================================== */
+    .banner-orbit-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 5;
+    }
+
+    .orbit-mode-tabs {
+      display: flex;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 24px;
+      padding: 3px;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .orbit-mode-btn {
+      background: transparent;
+      border: 0;
+      color: #e2e8f0;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .orbit-mode-btn.active {
+      background: var(--pr);
+      color: white;
+      box-shadow: 0 2px 10px rgba(12, 167, 74, 0.4);
+    }
+
+    .orbit-badge-caption {
+      font-size: 12.5px;
+      color: #ffe19a;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 12px;
+      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .orbit-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+      .orbit-container {
+        width: 280px;
+        height: 280px;
+      }
+    }
+
+    .orbit-pulse {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(12, 167, 74, 0.5) 0%, rgba(6, 182, 212, 0.15) 70%, transparent 100%);
+      animation: pulse-ring 3.2s ease-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes pulse-ring {
+      0% { transform: scale(0.8); opacity: 0.8; }
+      100% { transform: scale(2.4); opacity: 0; }
+    }
+
+    /* CENTER LOGO */
+    .orbit-center {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3.5px solid #0077b6;
+      box-shadow: 0 0 35px rgba(0, 119, 182, 0.6), 0 0 18px rgba(247, 127, 0, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+      padding: 3px;
+    }
+
+    .orbit-center-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .orbit-center:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 50px rgba(0, 119, 182, 0.9), 0 0 25px rgba(247, 127, 0, 0.7);
+    }
+
+    .orbit-center:hover .orbit-center-img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 480px) {
+      .orbit-center {
+        width: 105px;
+        height: 105px;
+      }
+    }
+
+    /* THE REVOLVING ORBIT RING */
+    .orbit-ring {
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      border: 2px dashed rgba(148, 229, 185, 0.5);
+      box-shadow: 0 0 20px rgba(12, 167, 74, 0.15), inset 0 0 20px rgba(12, 167, 74, 0.15);
+      animation: spin-orbit 28s linear infinite;
+      transform-origin: center center;
+    }
+
+    @media (max-width: 480px) {
+      .orbit-ring {
+        width: 240px;
+        height: 240px;
+      }
+    }
+
+    .orbit-ring.paused, .orbit-container:hover .orbit-ring {
+      animation-play-state: paused;
+    }
+
+    @keyframes spin-orbit {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes counter-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+
+    /* TOOL/PART NODES SITTING ON THE ORBIT */
+    .orbit-tool-node {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      margin-left: -24px;
+      margin-top: -24px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2.5px solid var(--pr);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+      display: grid;
+      place-items: center;
+      font-size: 21px;
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      animation: counter-spin 28s linear infinite;
+      z-index: 12;
+    }
+
+    @media (max-width: 480px) {
+      .orbit-tool-node {
+        width: 40px;
+        height: 40px;
+        margin-left: -20px;
+        margin-top: -20px;
+        font-size: 18px;
+      }
+    }
+
+    .orbit-ring.paused .orbit-tool-node, .orbit-container:hover .orbit-tool-node {
+      animation-play-state: paused;
+    }
+
+    .orbit-tool-node:hover {
+      transform: scale(1.3) !important;
+      border-color: #ffb800;
+      box-shadow: 0 0 22px rgba(255, 184, 0, 0.9), 0 0 35px rgba(12, 167, 74, 0.6);
+      z-index: 20;
+    }
+
+    /* CONTROLS & QUICK CHIPS */
+    .orbit-controls {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .orbit-ctrl-btn {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .orbit-ctrl-btn:hover {
+      background: rgba(255, 255, 255, 0.24);
+      border-color: white;
+    }
+
+    .orbit-tool-count {
+      font-size: 12.5px;
+      color: #94e5b9;
+      font-weight: 600;
+    }
+
+    .orbit-chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      max-width: 380px;
+      padding: 12px 4px 4px;
+      scrollbar-width: none;
+    }
+
+    .orbit-chips::-webkit-scrollbar {
+      display: none;
+    }
+
+    .orbit-chip {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #e2e8f0;
+      padding: 5px 12px;
+      border-radius: 14px;
+      font-size: 12px;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .orbit-chip:hover {
+      background: var(--pr);
+      color: white;
+      border-color: var(--pr);
+    }
+
+    /* ==========================================================================
+       ELECTRICAL ACCESSORIES / PARTS CATALOG GRID
+       ========================================================================== */
+    .parts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .part-card {
+      background: var(--card-bg);
+      border: 1px solid var(--bd);
+      border-radius: var(--radius-md);
+      padding: 22px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .part-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--pr);
+      box-shadow: var(--shadow-md);
+    }
+
+    .part-card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .part-icon-box {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--pr-light);
+      color: var(--pr);
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+
+    .part-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--tx);
+      line-height: 1.25;
+    }
+
+    .part-rating-badge {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--sc);
+      background: rgba(31, 66, 137, 0.08);
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    [data-theme="dark"] .part-rating-badge {
+      background: rgba(148, 229, 185, 0.15);
+      color: #94e5b9;
+    }
+
+    .part-desc {
+      font-size: 13.5px;
+      color: var(--mu);
+      line-height: 1.5;
+      margin: 8px 0 12px;
+      flex: 1;
+    }
+
+    .part-fault-hint {
+      font-size: 12px;
+      background: var(--bg2);
+      border-left: 3px solid var(--gold);
+      padding: 6px 10px;
+      border-radius: 4px;
+      color: var(--tx);
+      margin-bottom: 14px;
+    }
+
+    .part-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px dashed var(--bd);
+    }
+
+    /* ==========================================================================
+       TOOL & PART INFORMATION MODAL
+       ========================================================================== */
+    .tool-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 15, 38, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .tool-modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .tool-modal {
+      background: var(--card-bg);
+      color: var(--tx);
+      border: 1.5px solid var(--bd);
+      border-radius: var(--radius-lg);
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+      transform: translateY(20px) scale(0.96);
+      transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .tool-modal-overlay.active .tool-modal {
+      transform: translateY(0) scale(1);
+    }
+
+    .tool-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: var(--bg2);
+      border: 1px solid var(--bd);
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      font-size: 16px;
+      color: var(--tx);
+      transition: all 0.2s;
+      z-index: 10;
+    }
+
+    .tool-modal-close:hover {
+      background: #ef4444;
+      color: white;
+      border-color: #ef4444;
+    }
+
+    .tool-modal-header {
+      padding: 24px 26px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid var(--bd);
+      background: var(--bg2);
+    }
+
+    .tool-modal-icon-badge {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--sc), var(--pr));
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      color: white;
+      flex-shrink: 0;
+      box-shadow: 0 8px 18px rgba(12, 167, 74, 0.3);
+    }
+
+    .tool-modal-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--pr);
+      background: var(--pr-light);
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tool-modal-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--tx);
+      line-height: 1.25;
+    }
+
+    .tool-modal-body {
+      padding: 22px 26px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .tool-info-block {
+      background: var(--bg);
+      border: 1px solid var(--bd);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+
+    .tool-info-block strong {
+      display: block;
+      font-size: 13.5px;
+      color: var(--sc);
+      margin-bottom: 5px;
+    }
+
+    [data-theme="dark"] .tool-info-block strong {
+      color: #94e5b9;
+    }
+
+    .tool-info-block p {
+      font-size: 14.5px;
+      color: var(--tx);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .tool-modal-footer {
+      padding: 16px 26px 20px;
+      border-top: 1px solid var(--bd);
+      background: var(--bg2);
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* SUB-NAV */
+    .sub {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--bd);
+      position: sticky;
+      top: 69px;
+      z-index: 30;
+      transition: background 0.3s;
+    }
+
+    .sub .w {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+
+    .sub .w::-webkit-scrollbar {
+      display: none;
+    }
+
+    .sub a {
+      padding: 11px 16px;
+      white-space: nowrap;
+      color: var(--tx);
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .sub a:hover {
+      color: var(--pr);
+      background: rgba(12, 167, 74, 0.08);
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 0;
+    }
+
+    h2 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      line-height: 1.25;
+      margin: 0 0 16px;
+      color: var(--sc);
+      font-weight: 800;
+    }
+
+    [data-theme="dark"] h2 {
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin: 0 0 8px;
+      font-weight: 700;
+      color: var(--tx);
+    }
+
+    /* KEY HIGHLIGHTS */
+    .key {
+      background: var(--bg2);
+      border-left: 5px solid var(--pr);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      border-top: 1px solid var(--bd);
+      border-right: 1px solid var(--bd);
+      border-bottom: 1px solid var(--bd);
+    }
+
+    .key ul {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .key li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15.5px;
+      color: var(--tx);
+      font-weight: 500;
+    }
+
+    .key li::before {
+      content: "✓";
+      color: white;
+      background: var(--pr);
+      font-weight: 900;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-grid;
+      place-items: center;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* SERVICES CATEGORY FILTER */
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      margin: 20px 0 30px;
+      padding-bottom: 4px;
+    }
+
+    .filter-btn {
+      background: var(--bg2);
+      border: 1px solid var(--bd);
+      color: var(--tx);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 13.5px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--pr);
+      color: white;
+      border-color: var(--pr);
+    }
+
+    /* SERVICE CARDS GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .svc-card {
+      background: var(--card-bg);
+      border: 1px solid var(--bd);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s ease;
+    }
+
+    .svc-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--pr);
+    }
+
+    .pic {
+      position: relative;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--scd), var(--sc));
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .pic svg.ck {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.35;
+    }
+
+    .pic .ic {
+      position: relative;
+      font-size: 78px;
+      filter: drop-shadow(0 12px 16px rgba(0, 0, 0, 0.4));
+      animation: fl 3.5s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    @keyframes fl {
+      50% { transform: translateY(-8px); }
+    }
+
+    .svc-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .svc-body h3 {
+      font-size: 19px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .svc-price-tag {
+      font-size: 12.5px;
+      color: var(--pr);
+      background: var(--pr-light);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .svc-body b {
+      color: var(--sc);
+      font-size: 13.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 10px 0 6px;
+      display: block;
+    }
+
+    [data-theme="dark"] .svc-body b {
+      color: #94e5b9;
+    }
+
+    .svc-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px;
+      display: grid;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .svc-body li {
+      font-size: 14px;
+      color: var(--mu);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .svc-body li::before {
+      content: "•";
+      color: var(--pr);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .svc-footer {
+      padding-top: 14px;
+      border-top: 1px solid var(--bd);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* CALCULATOR & BOOKING CARDS */
+    .g2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--bd);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    label {
+      display: block;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--tx);
+      margin-bottom: 6px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--bd);
+      border-radius: 8px;
+      background: var(--bg);
+      color: var(--tx);
+      outline: none;
+      transition: all 0.2s ease;
+      margin-bottom: 14px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--pr);
+      box-shadow: 0 0 0 3px rgba(12, 167, 74, 0.15);
+    }
+
+    .res-box {
+      background: var(--pr-light);
+      border: 1px solid var(--pr);
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 16px 0 10px;
+    }
+
+    .res {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--pr);
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--mu);
+      line-height: 1.5;
+    }
+
+    /* GALLERY */
+    .gal {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .gal div {
+      aspect-ratio: 4/3;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, var(--scd), var(--sc));
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 16px;
+      font-size: 15px;
+      font-weight: 700;
+      gap: 10px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.25s ease;
+    }
+
+    .gal div:hover {
+      transform: translateY(-4px);
+    }
+
+    /* FAQ */
+    details {
+      background: var(--card-bg);
+      border: 1px solid var(--bd);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+    }
+
+    details[open] {
+      border-color: var(--pr);
+    }
+
+    summary {
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 16.5px;
+      color: var(--tx);
+      user-select: none;
+    }
+
+    details p {
+      color: var(--mu);
+      margin-top: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* CTA BANNER */
+    .cta {
+      background: linear-gradient(135deg, var(--scd) 0%, var(--sc) 100%);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .cta p {
+      font-size: 18px;
+      margin-bottom: 22px;
+      opacity: 0.95;
+    }
+
+    /* TABLES & HISTORY */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    td, th {
+      border-bottom: 1px solid var(--bd);
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      color: var(--mu);
+      font-weight: 700;
+      background: var(--bg2);
+    }
+
+    .sc {
+      overflow-x: auto;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #090d16;
+      color: #cbd5e1;
+      padding: 35px 0;
+      font-size: 14px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    footer a {
+      color: #94e5b9;
+    }
+
+    /* MOBILE STICKY BAR */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background: var(--bg);
+      border-top: 1px solid var(--bd);
+      padding: 10px 14px;
+      gap: 10px;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-bar a {
+      flex: 1;
+      padding: 11px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      text-align: center;
+    }
+
+    .mobile-bar-call {
+      background: var(--sc);
+      color: white;
+    }
+
+    .mobile-bar-wa {
+      background: #25d366;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .banner-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .banner-actions {
+        justify-content: center;
+      }
+      .who {
+        margin: 20px auto 0;
+      }
+    }
+
+    @media (max-width: 860px) {
+      header .w {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      nav.m {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        border-top: 1px solid var(--bd);
+        box-shadow: var(--shadow-md);
+        flex-direction: column;
+        padding: 18px 24px;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      nav.m.active {
+        display: flex;
+      }
+      .header-ctrls .btn-book-header {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-bar {
+        display: flex;
+      }
+      .banner {
+        padding: 50px 0 45px;
+      }
+      section {
+        padding: 45px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="w">
+      <div class="topbar-badge" data-i="topbar">
+        ⚡ <span>PN Electronics | Electrical • Electronics • IT • Networking | Balaghat (M.P.)</span>
+      </div>
+      <div class="topbar-badge">
+        <span>📞 Contact:</span>
+        <a href="tel:+919416981947" class="topbar-phone">+91 94169 81947</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="w">
+      <a class="brand" href="#top">
+        <img src="pn-electronics-logo.jpg" alt="PN Electronics Logo" class="brand-logo-img">
+        <div class="logo-text">
+          PN <span>ELECTRONICS</span>
+          <small>Electrical • Electronics • IT • Networking</small>
+        </div>
+      </a>
+
+      <nav class="m" id="nav"></nav>
+
+      <div class="header-ctrls">
+        <!-- Theme Toggle -->
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle Theme" title="Dark/Light Mode">🌓</button>
+
+        <!-- Language Switcher -->
+        <div class="lg">
+          <button id="be" class="on">English</button>
+          <button id="bh">हिन्दी</button>
+        </div>
+
+        <a class="btn btn-book-header" href="#book" data-i="cta">Book Now</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER WITH REVOLVING ORBIT TOOLS / PARTS LOGO & 3D CANVAS -->
+  <div class="banner" id="top">
+    <canvas id="c3d"></canvas>
+    <div class="w">
+      <div class="banner-grid">
+        <!-- Left Column: Content -->
+        <div class="banner-text">
+          <h1>PN ELECTRONICS</h1>
+          <p style="color:var(--gold);font-weight:700;font-size:15.5px;margin:-6px 0 12px;letter-spacing:0.3px;">
+            — Your Technology Partner for a Better Tomorrow —
+          </p>
+          <p class="tags">Electrical | Electronics | Computer | IT | Networking</p>
+          <p class="lead" data-i="sub">From mobile repair to heavy machines – every technical service in one place.</p>
+          
+          <div class="banner-actions">
+            <a class="btn" href="tel:+919416981947">📞 <span data-i="callnow">Call Now</span></a>
+            <a class="btn wa" id="heroWA" target="_blank" rel="noopener">💬 <span data-i="chatwa">WhatsApp Chat</span></a>
+            <a class="btn o" style="color:#fff;border-color:#fff" href="#parts">💡 <span data-i="nav_parts">Parts Guide</span></a>
+          </div>
+
+          <div class="who">
+            <img src="pn-electronics-logo.jpg" alt="PN" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:1.5px solid var(--pr);background:#fff;flex-shrink:0;">
+            <span data-i="by">PN Electronics — Your trusted Electrical, Electronics, Computer, IT &amp; Networking service company in Balaghat.</span>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Orbiting Logo with Rotating Tools & Electrical Parts -->
+        <div class="banner-orbit-wrap">
+          <!-- Mode Tabs (Tools vs Parts) -->
+          <div class="orbit-mode-tabs">
+            <button class="orbit-mode-btn active" id="orbitModeTools" type="button">
+              🔧 <span data-i="orbit_mode_tools">Tools (टूल्स)</span>
+            </button>
+            <button class="orbit-mode-btn" id="orbitModeParts" type="button">
+              💡 <span data-i="orbit_mode_parts">Materials (सामग्री)</span>
+            </button>
+          </div>
+
+          <div class="orbit-badge-caption" id="orbitBadgeCaption" data-i="orbit_hint">
+            ⚡ घूमते आइटम्स पर क्लिक करके जानकारी देखें (Click items to view info)
+          </div>
+
+          <div class="orbit-container" id="orbitContainer">
+            <div class="orbit-pulse"></div>
+
+            <!-- Central Brand Logo (Official PN Electronics Logo) -->
+            <div class="orbit-center" id="orbitCenterLogo" title="PN Electronics - Your Technology Partner for a Better Tomorrow">
+              <img src="pn-electronics-logo.jpg" alt="PN Electronics Logo" class="orbit-center-img">
+            </div>
+
+            <!-- Revolving Ring Orbit with 8 Nodes -->
+            <div class="orbit-ring" id="orbitRing">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Controls for Orbit Animation -->
+          <div class="orbit-controls">
+            <button class="orbit-ctrl-btn" id="orbitToggleBtn" type="button">
+              ⏸️ <span id="orbitCtrlText" data-i="orbit_pause">Pause Orbit</span>
+            </button>
+            <span class="orbit-tool-count" id="orbitItemCount">8 Items in Orbit</span>
+          </div>
+
+          <!-- Quick Tap Chips for Mobile/Touch -->
+          <div class="orbit-chips" id="orbitChips"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUB NAVIGATION -->
+  <div class="sub">
+    <div class="w" id="subnav"></div>
+  </div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="w">
+
+    <!-- KEY TAKEAWAYS -->
+    <section>
+      <h2 data-i="kt">Key Takeaways</h2>
+      <div class="key">
+        <ul id="kl"></ul>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+      <h2 data-i="h1">Our Services</h2>
+      <p style="color:var(--mu);margin-bottom:12px;" data-i="h1p">Every service includes complete professional diagnosis, standard safety protocols, and warranty support:</p>
+      
+      <!-- Category Filter Pills -->
+      <div class="filter-bar" id="filterBar"></div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="sg"></div>
+    </section>
+
+    <!-- ELECTRICAL ACCESSORIES & HARDWARE CATALOG SECTION (FROM USER IMAGE CHART) -->
+    <section id="parts">
+      <h2 data-i="parts_h2">Electrical Accessories &amp; Materials Guide</h2>
+      <p style="color:var(--mu);margin-bottom:14px;" data-i="parts_sub">
+        घर, दुकान व ऑफिस में लगने वाली सभी प्रमुख इलेक्ट्रिकल सामग्री — पार्ट्स को पहचानें, सही रेटिंग जानें और रिप्लेसमेंट या नई फिटिंग के लिए संपर्क करें:
+      </p>
+
+      <!-- Parts Category Filter -->
+      <div class="filter-bar" id="partsFilterBar"></div>
+
+      <!-- Parts Grid -->
+      <div class="parts-grid" id="partsGrid"></div>
+
+      <!-- Full Visual Chart Reference Box -->
+      <div class="card" style="margin-top:28px;background:linear-gradient(135deg,rgba(31,66,137,0.06),rgba(12,167,74,0.08));display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+        <div>
+          <h3 style="font-size:18px;margin-bottom:4px;" data-i="chart_banner_title">📸 ओरिजिनल इलेक्ट्रिकल एक्सेसरीज़ चार्ट</h3>
+          <p class="note" data-i="chart_banner_desc">स्विच, सॉकेट, होल्डर, किटकैट फ्यूज, एमसीबी व रेगुलेटर का सम्पूर्ण सचित्र संदर्भ चार्ट।</p>
+        </div>
+        <a href="electrical-parts-chart.png" target="_blank" rel="noopener" class="btn btn-sm o" data-i="chart_view_btn">
+          🔍 ओरिजिनल चार्ट देखें (View Original Chart)
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CALCULATOR -->
+    <section id="calc">
+      <h2 data-i="h2">Service Cost Calculator</h2>
+      <div class="card">
+        <div class="g2">
+          <div>
+            <label data-i="l1">Choose Service</label>
+            <select id="cs"></select>
+          </div>
+          <div>
+            <label data-i="l2">Quantity (Points / Devices / Units)</label>
+            <input id="cq" type="number" min="1" value="1">
+          </div>
+        </div>
+
+        <div class="res-box">
+          <div>
+            <div style="font-size:13px;color:var(--mu);" data-i="estlabel">Estimated Labour Cost:</div>
+            <div class="res" id="cr">₹0</div>
+          </div>
+          <button class="btn btn-sm" id="calcWABtn" type="button">💬 <span data-i="sendest">Send on WhatsApp</span></button>
+        </div>
+
+        <div class="note" data-i="cn">* Estimate only for standard labor. Final rate is confirmed after on-site or in-shop inspection.</div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION & HISTORY -->
+    <section id="book">
+      <h2 data-i="h3">Online Service Booking</h2>
+      <div class="card">
+        <div class="g2">
+          <div>
+            <label data-i="l3">Your Name *</label>
+            <input id="bn" placeholder="e.g. Ramesh Kumar" required>
+          </div>
+          <div>
+            <label data-i="l4">Mobile Number *</label>
+            <input id="bm" type="tel" placeholder="e.g. 9876543210" required>
+          </div>
+          <div>
+            <label data-i="l1">Select Service *</label>
+            <select id="bs"></select>
+          </div>
+          <div>
+            <label data-i="l5">Preferred Date</label>
+            <input id="bd" type="date">
+          </div>
+        </div>
+
+        <label data-i="l6">Address / Problem Details</label>
+        <textarea id="bt" rows="3" placeholder="Provide your colony/area in Balaghat and a brief description of the issue or part to replace..."></textarea>
+        
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+          <button class="btn" id="bgo" data-i="sub2">Send Booking via WhatsApp</button>
+          <span class="note" id="bmsg" style="font-weight:700;"></span>
+        </div>
+      </div>
+
+      <!-- RECENT LOCAL BOOKING HISTORY -->
+      <div class="card" style="margin-top:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <h3 data-i="h4">My Recent Service History</h3>
+          <button class="btn o" id="clearHistBtn" style="padding:4px 10px;font-size:12px;">Clear History</button>
+        </div>
+        <div id="hist" class="sc" style="margin-top:10px;"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <h2 data-i="h5">Gallery – Our Work &amp; Equipment</h2>
+      <div class="gal" id="gl"></div>
+      <p class="note" style="margin-top:14px;" data-i="gn">Authentic quality work across residential, commercial and industrial setups in Balaghat.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2 data-i="h7">Frequently Asked Questions</h2>
+      <div id="fq"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 data-i="h6">Contact Information</h2>
+      <div class="card" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+        <div>
+          <p style="font-size:17px;margin-bottom:8px;">
+            📞 <strong>Phone:</strong> <span id="ph"></span><br>
+            📍 <strong>Address:</strong> <span data-i="addr">Balaghat, Madhya Pradesh</span><br>
+            ⏰ <strong>Working Hours:</strong> Mon - Sun: 8:00 AM - 8:30 PM
+          </p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="btn wa" id="wa" target="_blank" rel="noopener">💬 WhatsApp Chat</a>
+          <a class="btn o" id="mp" target="_blank" rel="noopener">📍 Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- BOTTOM CALL-TO-ACTION BANNER -->
+  <div class="cta">
+    <div class="w">
+      <h2 data-i="ct">Need a Reliable Technical Service Partner?</h2>
+      <p data-i="cp">Book online today or message us directly on WhatsApp.</p>
+      <a class="btn" style="background:#fff;color:var(--sc);font-weight:800;" href="#book" data-i="cta">Book Now</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="w" style="display:flex;flex-direction:column;align-items:center;gap:12px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="pn-electronics-logo.jpg" alt="PN Electronics" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--pr);background:#fff;">
+        <strong style="color:#fff;font-size:18px;letter-spacing:0.5px;">PN Electronics · Balaghat (M.P.)</strong>
+      </div>
+      <p style="font-size:13.5px;color:#94a3b8;margin:0;font-style:italic;">— Your Technology Partner for a Better Tomorrow —</p>
+      <div style="font-size:13px;color:#cbd5e1;margin-top:2px;">
+        © 2026 PN Electronics (Pramod Electrical &amp; Technical Services) · <span data-i="rights">All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="mobile-bar">
+    <a href="tel:+919416981947" class="mobile-bar-call">
+      📞 <span data-i="mobcall">Call</span>
+    </a>
+    <a href="https://wa.me/919416981947?text=Hello%20Pramod%20ji%2C%20I%20need%20technical%20service." target="_blank" rel="noopener" class="mobile-bar-wa">
+      💬 <span>WhatsApp</span>
+    </a>
+    <a href="#book" class="btn" style="flex:1.2;background:var(--pr);color:#fff;">
+      ⚡ <span data-i="mobbook">Book</span>
+    </a>
+  </div>
+
+  <!-- DETAIL MODAL POPUP FOR TOOLS & ELECTRICAL PARTS -->
+  <div class="tool-modal-overlay" id="toolModalOverlay" role="dialog" aria-modal="true">
+    <div class="tool-modal" id="toolModal">
+      <button class="tool-modal-close" id="toolModalClose" type="button" aria-label="Close Modal">✕</button>
+      
+      <div class="tool-modal-header">
+        <div class="tool-modal-icon-badge" id="modalToolIcon">📟</div>
+        <div>
+          <span class="tool-modal-tag" id="modalToolTag">Diagnostics</span>
+          <h3 class="tool-modal-title" id="modalToolTitle">Item Name</h3>
+        </div>
+      </div>
+
+      <div class="tool-modal-body">
+        <div class="tool-info-block">
+          <strong id="modalPurposeHeading">🎯 मुख्य उपयोग (Primary Purpose):</strong>
+          <p id="modalToolPurpose">Description here...</p>
+        </div>
+
+        <div class="tool-info-block">
+          <strong id="modalSafetyHeading">🛡️ सुरक्षा एवं तकनीकी मानक (Safety & Precision):</strong>
+          <p id="modalToolSafety">Technical details here...</p>
+        </div>
+      </div>
+
+      <div class="tool-modal-footer">
+        <button class="btn btn-sm o" id="modalCloseBtn" type="button">बंद करें (Close)</button>
+        <a href="#book" class="btn btn-sm" id="modalBookBtn">⚡ <span data-i="modal_book_btn">Book Related Service</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- THREE.JS FOR 3D HERO CANVAS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script>
+    /* ==========================================================================
+       CONFIG & DATA
+       ========================================================================== */
+    const PHONE = "919416981947";
+    const ADDR = "Balaghat, Madhya Pradesh";
+
+    /* ==========================================================================
+       DATA: REVOLVING TOOLS (MODE: TOOLS)
+       ========================================================================== */
+    const TOOLS_DATA = [
+      {
+        id: "multimeter",
+        icon: "📟",
+        tag: "Testing & Diagnostics",
+        tagHi: "टेस्टिंग एवं फॉल्ट डायग्नोस्टिक्स",
+        name: "Digital Multimeter (CAT III 1000V)",
+        nameHi: "डिजिटल मल्टीमीटर (1000V प्रोटेक्शन)",
+        purpose: "Accurately measures AC/DC voltage, current, resistance, continuity, capacitance, and detects hidden electrical short-circuits.",
+        purposeHi: "एसी/डीसी वोल्टेज, करंट, रेजिस्टेंस, कंटिन्यूटी, कैपेसिटर की सटीक जांच और शॉर्ट-सर्किट फॉल्ट ढूंढने में मुख्य उपयोग।",
+        safety: "CAT-III 1000V rated insulated probes prevent electric arcs, shocks, and equipment overload burnouts.",
+        safetyHi: "1000V इंसुलेटेड प्रोब्स और ओवरलोड सुरक्षा, जिससे किसी भी उपकरण या तकनीशियन को शॉक का खतरा नहीं रहता।",
+        serviceIdx: 0
+      },
+      {
+        id: "tester",
+        icon: "🪛",
+        tag: "Live Line Safety",
+        tagHi: "लाइव लाइन सुरक्षा",
+        name: "Insulated Phase Tester & VDE Drivers",
+        nameHi: "इंसुलेटेड फेज टेस्टर व स्क्रूड्राइवर",
+        purpose: "Instantly detects live current in 100V-500V lines, identifies phase/neutral polarity, and securely fastens MCBs and modular switchboards.",
+        purposeHi: "100V-500V लाइव वायर में करंट की तुरंत पहचान, फेज और न्यूट्रल की सही जांच तथा स्विच-बोर्ड व MCB की सुरक्षित टाइटनिंग।",
+        safety: "VDE certified 1000V shock-proof grip guarantees 100% human safety during live maintenance.",
+        safetyHi: "VDE प्रमाणित 1000 वोल्ट शॉक-प्रूफ रबर इंसुलेशन ग्रिप, जिससे करंट लगने की शून्य संभावना होती है।",
+        serviceIdx: 0
+      },
+      {
+        id: "clampmeter",
+        icon: "🗜️",
+        tag: "Load & Current Analysis",
+        tagHi: "लोड व करंट मापन",
+        name: "Digital AC/DC Clamp Meter",
+        nameHi: "डिजिटल एसी/डीसी क्लैम्प मीटर",
+        purpose: "Measures running load amperes of water motors, air conditioners, factory machines, and main phase lines without cutting or disconnecting wires.",
+        purposeHi: "बिना तार काटे या सर्किट खोले पानी की मोटर, एसी, फैक्ट्री मशीन और मेन लाइन का वास्तविक रनिंग करंट (एम्पीयर) मापना।",
+        safety: "Non-contact magnetic induction measurement eliminates direct physical contact with high-current live conductors.",
+        safetyHi: "कॉन्टैक्टलेस इंडक्शन तकनीक जिससे हाई-एम्पीयर तारों को सीधे छुए बिना सुरक्षित लोड और ट्रिपिंग का विश्लेषण होता है।",
+        serviceIdx: 5
+      },
+      {
+        id: "stripper",
+        icon: "✂️",
+        tag: "Precision Termination",
+        tagHi: "वायर टर्मिनेशन",
+        name: "Automatic Wire Stripper & Crimper",
+        nameHi: "ऑटोमैटिक वायर स्ट्रिपर व क्रिम्पिंग टूल",
+        purpose: "Strips wire insulation with micro-precision without nicking internal copper strands; firmly crimps lugs and thimbles onto cables.",
+        purposeHi: "कॉपर के बारीक तारों को बिना काटे इंसुलेशन की साफ छिलाई और तारों में लग्स/थिम्बल का मजबूत पंचिंग।",
+        safety: "Prevents sparking, terminal heat-up, and loose contact fires caused by damaged copper cores.",
+        safetyHi: "कमजोर तारों और ढीले कनेक्शनों से होने वाली स्पार्किंग व आग लगने के खतरे को 100% रोकता है।",
+        serviceIdx: 0
+      },
+      {
+        id: "soldering",
+        icon: "🔌",
+        tag: "Micro Electronics",
+        tagHi: "माइक्रो इलेक्ट्रॉनिक्स रिपेयर",
+        name: "Temperature Controlled Soldering Station",
+        nameHi: "तापमान नियंत्रित सोल्डरिंग स्टेशन",
+        purpose: "Performs microscopic component soldering and de-soldering on mobile phones, laptop motherboards, inverter cards, and CCTV boards.",
+        purposeHi: "मोबाइल फोन, लैपटॉप मदरबोर्ड, इन्वर्टर कंट्रोल कार्ड और CCTV सर्किट्स पर माइक्रो कंपोनेंट्स की सोल्डरिंग।",
+        safety: "ESD safe (Electro-Static Discharge protected) grounding protects sensitive microprocessors from static damage.",
+        safetyHi: "ESD सुरक्षित ग्राउंडिंग जिससे नाजुक माइक्रोप्रोसेसर और ICs स्टेटिक बिजली से खराब नहीं होते।",
+        serviceIdx: 1
+      },
+      {
+        id: "pliers",
+        icon: "🛠️",
+        tag: "Heavy-Duty Electrical",
+        tagHi: "हैवी ड्यूटी इलेक्ट्रिकल",
+        name: "1000V Insulated Combination Pliers",
+        nameHi: "1000V इंसुलेटेड कॉम्बिनेशन प्लायर",
+        purpose: "Heavy-duty gripping, twisting, bending, and cutting of tough multi-strand copper and aluminum power cables.",
+        purposeHi: "मोटे कॉपर और एल्युमिनियम पावर केबलों की कटिंग, मजबूत ग्रिपिंग और जोड़ों को सुरक्षित कसना।",
+        safety: "Heavy-duty dual-component insulation tested up to 10,000V for guaranteed 1,000V live-line work safety.",
+        safetyHi: "10,000V पर टेस्टेड और 1,000V लाइव लाइन पर काम करने हेतु प्रमाणित हैवी-ड्यूटी शॉकप्रूफ इंसुलेशन।",
+        serviceIdx: 0
+      },
+      {
+        id: "networktester",
+        icon: "🌐",
+        tag: "Networking & Security",
+        tagHi: "नेटवर्किंग व CCTV टेस्टिंग",
+        name: "RJ45/RJ11 Network Cable Tester",
+        nameHi: "LAN व CCTV नेटवर्क केबल टेस्टर",
+        purpose: "Tests 8-pin continuity, pinouts, cross-talk, and signal integrity across Cat6 ethernet and IP camera network cables.",
+        purposeHi: "Cat6 इंटरनेट और IP कैमरा केबल्स के 8 तारों की सिग्नल कंटिन्यूटी, सही पंचिंग व डेटा स्पीड की जांच।",
+        safety: "Instantly locates broken pairs or shorted lines, ensuring zero data loss and flawless 24/7 CCTV streaming.",
+        safetyHi: "केबल में टूटे तार या क्रॉस कनेक्शन को तुरंत ढूंढता है, जिससे इंटरनेट ड्रॉप और CCTV सिग्नल लॉस नहीं होता।",
+        serviceIdx: 3
+      },
+      {
+        id: "heatgun",
+        icon: "💨",
+        tag: "Insulation & Rework",
+        tagHi: "इंसुलेशन व हॉट एयर रीवर्क",
+        name: "Hot Air SMD Rework Blower & Heat Gun",
+        nameHi: "हॉट एयर एसएमडी ब्लोअर व हीट गन",
+        purpose: "Applies professional heat-shrink insulation sleeves over joints and safely lifts SMD chips from circuit boards.",
+        purposeHi: "केबल जोड़ों पर वाटरप्रूफ हीट-श्रिंक स्लीव चढ़ाना और मोबाइल/कंप्यूटर की चिप्स को बिना नुकसान हटाना।",
+        safety: "Eliminates flammable, peeling PVC tape with permanent, heat-resistant, waterproof insulation.",
+        safetyHi: "काली पीवीसी टेप के छूटने या आग पकड़ने के खतरे को खत्म कर वाटरप्रूफ व हीट-रेसिस्टेंट सीलिंग प्रदान करता है।",
+        serviceIdx: 5
+      }
+    ];
+
+    /* ==========================================================================
+       DATA: REVOLVING ELECTRICAL ACCESSORIES (MODE: MATERIALS)
+       ========================================================================== */
+    const ORBIT_PARTS_DATA = [
+      {
+        id: "orb_batten",
+        icon: "💡",
+        tag: "Bulb Holder",
+        tagHi: "बल्ब होल्डर",
+        name: "Batten Lamp Holder",
+        nameHi: "बैटन लैम्प होल्डर (सीधा)",
+        purpose: "Standard straight 90° ceiling or wall lamp holder with heat-resistant brass contacts for LED/CFL bulbs.",
+        purposeHi: "दीवार या छत पर सीधा 90 डिग्री पर कसा जाने वाला मानक बल्ब होल्डर। ब्रास टर्मिनल्स के साथ टिकाऊ फिटिंग।",
+        safety: "Fire-retardant polycarbonate housing prevents melting and loose contact arcing.",
+        safetyHi: "अग्निरोधी पॉलीकार्बोनेट हाउसिंग जो बल्ब की गर्मी से पिघलती नहीं और शॉर्ट सर्किट रोकती है।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_angle",
+        icon: "💡",
+        tag: "Bulb Holder",
+        tagHi: "बल्ब होल्डर",
+        name: "Angle Lamp Holder (45°/60°)",
+        nameHi: "एंगल लैम्प होल्डर (तिरछा)",
+        purpose: "Angled wall holder designed to focus light downwards across the room floor or study area.",
+        purposeHi: "दीवार पर तिरछा लगकर कमरे के फर्श और सामने की ओर बेहतर रोशनी बिखेरने वाला एंगल होल्डर।",
+        safety: "Heavy spring-loaded brass plungers maintain continuous tight contact with bulb pins.",
+        safetyHi: "मजबूत स्प्रिंग वाले पीतल के कॉन्टैक्ट्स जो बल्ब को ढीला नहीं पड़ने देते और स्पार्किंग नहीं होती।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_switch",
+        icon: "🔘",
+        tag: "Switches & Sockets",
+        tagHi: "स्विच व सॉकेट",
+        name: "Modular 1-Way / 2-Way Switch",
+        nameHi: "मॉड्यूलर 1-वे व 2-वे स्विच",
+        purpose: "Smooth on/off operation for lights, ceiling fans, and utility points with pure silver-inlaid contacts.",
+        purposeHi: "लाइट, पंखे और पावर सॉकेट्स को ऑन/ऑफ करने का टिकाऊ स्विच। 2-वे मॉडल सीढ़ियों में उपयोगी।",
+        safety: "Tested for 100,000+ switching operations without carbon build-up or sparks.",
+        safetyHi: "सिल्वर कॉन्टैक्ट्स जिससे स्पार्किंग और काला कार्बन नहीं जमता और उपकरण सुरक्षित रहते हैं।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_socket",
+        icon: "🔌",
+        tag: "Power Sockets",
+        tagHi: "पावर सॉकेट",
+        name: "3-Pin Shuttered Power Socket",
+        nameHi: "3-पिन शटर्ड पावर सॉकेट (6A/16A)",
+        purpose: "Heavy-duty power socket with dedicated top earth terminal for TVs, refrigerators, geysers, and irons.",
+        purposeHi: "फ्रिज, गीजर, प्रेस और टीवी के लिए 3-पिन सॉकेट। तीसरा बड़ा पिन करंट लीकेज से सुरक्षा देता है।",
+        safety: "Child-safety internal shutters prevent accidental insertion of metallic objects or fingers.",
+        safetyHi: "बच्चों की सुरक्षा हेतु इंटरनल सेफ्टी शटर जो अनचाहे करंट के खतरे को पूरी तरह समाप्त करते हैं।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_mcb",
+        icon: "🛡️",
+        tag: "Protection & Safety",
+        tagHi: "फ्यूज व सुरक्षा",
+        name: "Single Pole MCB (6A - 32A)",
+        nameHi: "सिंगल पोल एमसीबी (SP MCB)",
+        purpose: "Instantly trips within 0.02 seconds during sudden short-circuit or electrical overload.",
+        purposeHi: "शॉर्ट-सर्किट या लोड अधिक होने पर 0.02 सेकंड में ट्रिप होकर पूरी वायरिंग और उपकरणों को जलने से बचाती है।",
+        safety: "Replaces risky rewirable fuses; provides precise thermal-magnetic tripping protection.",
+        safetyHi: "पारंपरिक फ्यूज से कई गुना तेज व सुरक्षित, बिना तार बदले सिर्फ स्विच ऊपर करके रीसेट।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_kitkat",
+        icon: "🧱",
+        tag: "Main Fuse",
+        tagHi: "मेन पोर्सिलेन फ्यूज",
+        name: "Kit-Kat Porcelain Fuse (16A/32A)",
+        nameHi: "चीनी मिट्टी किटकैट फ्यूज",
+        purpose: "Fireproof ceramic rewireable fuse installed at main meter boards and heavy phase distribution lines.",
+        purposeHi: "मेन मीटर बोर्ड पर लगने वाला पारंपरिक चीनी मिट्टी फ्यूज जो भारी फॉल्ट पर तार पिघलाकर सुरक्षा करता है।",
+        safety: "Zero fire hazard ceramic body; does not catch fire or melt during high-temperature arcs.",
+        safetyHi: "अग्निरोधक चीनी मिट्टी बॉडी जो तेज स्पार्क पर भी आग नहीं पकड़ती।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_regulator",
+        icon: "🌀",
+        tag: "Fan Control",
+        tagHi: "पंखे का रेगुलेटर",
+        name: "Hum-Free 5-Step Fan Regulator",
+        nameHi: "मॉड्यूलर स्विच टाइप फैन रेगुलेटर",
+        purpose: "Controls ceiling fan speed smoothly in 5 silent steps without energy wastage or humming noise.",
+        purposeHi: "सीलिंग फैन की गति को 1 से 5 स्टेप में बिना किसी हमिंग आवाज के बिजली बचाते हुए नियंत्रित करना।",
+        safety: "Heavy-duty metallized capacitor prevents motor coil overheating.",
+        safetyHi: "उच्च गुणवत्ता का कैपेसिटर जो पंखे की मोटर कॉइल को अधिक गर्म होने से बचाता है।",
+        serviceIdx: 0
+      },
+      {
+        id: "orb_junction",
+        icon: "📦",
+        tag: "Wiring & Junction",
+        tagHi: "कंसील्ड वायरिंग फिटिंग",
+        name: "4-Way PVC Conduit Junction Box",
+        nameHi: "4-वे पीवीसी जंक्शन बॉक्स",
+        purpose: "Distributes concealed or surface PVC conduit wiring safely across 4 different wall directions.",
+        purposeHi: "दीवार व छत की पाइपिंग में चारों दिशाओं में तारों को सुरक्षित बांटने व मोड़ने हेतु जंक्शन बॉक्स।",
+        safety: "Impact-resistant PVC shields wire joints from moisture, wall dampness, and rodents.",
+        safetyHi: "दीवार की नमी, सीलन और चूहों से तारों के जोड़ों को सुरक्षित रखने वाली वाटर-रेसिस्टेंट बॉडी।",
+        serviceIdx: 0
+      }
+    ];
+
+    /* ==========================================================================
+       COMPLETE CATALOG OF ELECTRICAL ACCESSORIES (19 ITEMS FROM CHART)
+       ========================================================================== */
+    const ALL_ELECTRICAL_PARTS = [
+      {
+        id: "p_batten",
+        cat: "holders",
+        icon: "💡",
+        name: "Batten Lamp Holder",
+        nameHi: "बैटन लैम्प होल्डर",
+        specs: "250V, 2A/4A, Brass Screw Terminals",
+        desc: "Straight-mounted holder directly fixed to walls or ceiling boards for standard B22 base LED bulbs.",
+        descHi: "दीवार या सीलिंग पर सीधा 90° पर कसा जाने वाला मानक बल्ब होल्डर। B22 पिन वाले LED/CFL बल्बों के लिए उपयुक्त।",
+        fault: "⚠️ स्पार्किंग होना, बल्ब ढीला पड़ना या प्लास्टिक का पीला होकर टूटना।"
+      },
+      {
+        id: "p_angle",
+        cat: "holders",
+        icon: "💡",
+        name: "Angle Lamp Holder",
+        nameHi: "एंगल लैम्प होल्डर (तिरछा)",
+        specs: "250V, 45°/60° Angled Projection",
+        desc: "Angled wall holder designed to project illumination downwards into rooms and staircases.",
+        descHi: "दीवार पर तिरछा लगकर कमरे के फर्श और सामने की ओर बेहतर रोशनी बिखेरने वाला एंगल होल्डर।",
+        fault: "⚠️ अंदर की स्प्रिंग पत्ती दब जाना जिससे बल्ब चालू न होना।"
+      },
+      {
+        id: "p_pendent",
+        cat: "holders",
+        icon: "💡",
+        name: "Pendent Wire Holder",
+        nameHi: "पेंडेंट वायर होल्डर (लटकने वाला)",
+        specs: "250V, Heavy Cord Grip Cap",
+        desc: "Suspended holder supported directly by flexible electrical cord; ideal for balconies, temples and decorative lights.",
+        descHi: "तार के सहारे लटकने वाला होल्डर। बालकनी, सीढ़ियों, पूजा घर व अस्थायी लाइट के लिए उपयोगी।",
+        fault: "⚠️ तार की ग्रिप ढीली होने पर तार खिंचने या छिलने का जोखिम।"
+      },
+      {
+        id: "p_multi",
+        cat: "holders",
+        icon: "🔌",
+        name: "Multi / Parallel Holder",
+        nameHi: "मल्टी बल्ब होल्डर / 2-इन-1",
+        specs: "250V, Dual Bulb / Plug Socket",
+        desc: "Multi-point adapter permitting simultaneous connection of an extra bulb and two-pin plugs.",
+        descHi: "एक ही होल्डर पॉइंट से दो बल्ब या एक बल्ब और एक 2-पिन प्लग कनेक्ट करने की सुविधा।",
+        fault: "⚠️ भारी लोड लगाने पर अधिक गर्म होकर पिघलना।"
+      },
+      {
+        id: "p_socket_holder",
+        cat: "holders",
+        icon: "💡",
+        name: "Socket-Type Plug-in Holder",
+        nameHi: "सॉकेट कम होल्डर (प्लग-इन)",
+        specs: "2-Pin / 3-Pin Direct Insert",
+        desc: "Portable bulb holder directly inserted into any wall socket without wiring.",
+        descHi: "बिना किसी वायरिंग के सीधे 3-पिन वॉल सॉकेट में लगाकर बल्ब जलाने वाला पोर्टेबल होल्डर।",
+        fault: "⚠️ दीवार के सॉकेट में पिन ढीली होने पर स्पार्किंग।"
+      },
+      {
+        id: "p_1way_switch",
+        cat: "switches",
+        icon: "🔘",
+        name: "1-Way Modular Switch",
+        nameHi: "1-वे मॉड्यूलर स्विच (6A / 16A)",
+        specs: "6A/16A, 250V AC, Silver Contacts",
+        desc: "Standard on/off control for domestic lights, ceiling fans, and power sockets.",
+        descHi: "लाइट, पंखे या सॉकेट को चालू/बंद करने वाला मुख्य स्विच। 6A सामान्य लोड और 16A भारी लोड हेतु।",
+        fault: "⚠️ स्विच का स्प्रिंग चटका (Click) खत्म होना या अंदर स्पार्क होना।"
+      },
+      {
+        id: "p_2way_switch",
+        cat: "switches",
+        icon: "🔀",
+        name: "2-Way Staircase Switch",
+        nameHi: "2-वे स्विच (सीढ़ी वायरिंग)",
+        specs: "6A, 3-Terminal SPDT Mechanism",
+        desc: "Allows operating a single light from two separate locations (staircase top/bottom, bedroom entrance/bedside).",
+        descHi: "एक ही लाइट को दो अलग-अलग जगहों से (सीढ़ी के ऊपर व नीचे या बेड के पास से) ऑन/ऑफ करने का स्विच।",
+        fault: "⚠️ एक तरफ से बंद होने पर दूसरी तरफ से काम न करना।"
+      },
+      {
+        id: "p_3pin_socket",
+        cat: "switches",
+        icon: "🔌",
+        name: "3-Pin / 6-Pin Power Socket",
+        nameHi: "3-पिन शटर्ड पावर सॉकेट",
+        specs: "6A (Normal) / 16A (Heavy Duty Geyser)",
+        desc: "Safe power receptacle with thick top earth terminal for TVs, refrigerators, geysers, and irons.",
+        descHi: "टीवी, फ्रिज, गीजर, प्रेस और कंप्यूटर के लिए सुरक्षित पावर पॉइंट। तीसरा बड़ा पिन अर्थिंग देता है।",
+        fault: "⚠️ प्लग पिन ढीली होना, स्पार्किंग के काले निशान या जलने की गंध।"
+      },
+      {
+        id: "p_2pin_socket",
+        cat: "switches",
+        icon: "🔌",
+        name: "2-Pin Utility Socket",
+        nameHi: "2-पिन कॉम्पैक्ट सॉकेट (6A)",
+        specs: "6A, 250V AC, Modular Fit",
+        desc: "Compact utility socket for mobile phone chargers, table fans, and two-pin electronic gadgets.",
+        descHi: "स्मार्टफोन चार्जर, टेबल फैन व छोटे उपकरणों के लिए कॉम्पैक्ट 2-पिन पॉइंट।",
+        fault: "⚠️ चार्जर डालने पर लूज कनेक्शन से बार-बार चार्जिंग कटना।"
+      },
+      {
+        id: "p_3pin_top",
+        cat: "switches",
+        icon: "🔌",
+        name: "3-Pin Power Plug Top",
+        nameHi: "3-पिन टॉप प्लग (6A / 16A)",
+        specs: "Solid Brass Pins, Polycarbonate Body",
+        desc: "Heavy-duty male plug top attached to cable ends of coolers, geysers, and heavy appliances.",
+        descHi: "कूलर, गीजर, हीटर और प्रेस की पावर केबल के सिरे पर लगने वाला 3-पिन टॉप प्लग।",
+        fault: "⚠️ पिन अधिक गर्म होकर पिघल जाना या स्क्रू ढीला होना।"
+      },
+      {
+        id: "p_2pin_top",
+        cat: "switches",
+        icon: "🔌",
+        name: "2-Pin Plug Top",
+        nameHi: "2-पिन प्लग टॉप",
+        specs: "6A, 250V, Insulated Brass Pins",
+        desc: "Standard 2-pin plug top for table lamps, chargers, and light household appliances.",
+        descHi: "टेबल फैन, रेडियो और छोटे घरेलू उपकरणों के लिए मानक 2-पिन प्लग।",
+        fault: "⚠️ तार खिंचकर पिन से अलग हो जाना।"
+      },
+      {
+        id: "p_male_female",
+        cat: "switches",
+        icon: "🔌",
+        name: "Male-Female Extension Connector",
+        nameHi: "मेल-फीमेल प्लग कनेक्टर",
+        specs: "6A, 250V, 2-Piece Inline Coupling",
+        desc: "Two-piece plug and socket set for quick, safe joining of extended electrical cords.",
+        descHi: "लंबी बिजली की वायर या एक्सटेंशन कॉर्ड को बीच में सुरक्षित जोड़ने व अलग करने हेतु कनेक्टर।",
+        fault: "⚠️ आपस में लूज होना जिससे बीच में बिजली गुल होना।"
+      },
+      {
+        id: "p_indicator",
+        cat: "switches",
+        icon: "🔴",
+        name: "Switchboard Neon Indicator",
+        nameHi: "बोर्ड इंडिकेटर (नियॉन बत्ती)",
+        specs: "230V AC Neon, Long Life",
+        desc: "Visual red/orange glow light indicating active 230V mains power supply in switchboards.",
+        descHi: "स्विच बोर्ड में बिजली आ रही है या नहीं, यह दूर से दिखाने वाली लाल/नारंगी नियॉन लाइट।",
+        fault: "⚠️ बत्ती का टिमटिमाना या फ्यूज हो जाना।"
+      },
+      {
+        id: "p_single_mcb",
+        cat: "safety",
+        icon: "🛡️",
+        name: "Single Pole MCB (SP MCB)",
+        nameHi: "सिंगल पोल एमसीबी (6A - 32A)",
+        specs: "6A, 10A, 16A, 20A, 25A, 32A (C-Curve)",
+        desc: "Fast thermal-magnetic circuit breaker that trips within 0.02s during overcurrent or short-circuits.",
+        descHi: "शॉर्ट-सर्किट या ओवरलोड पर तुरंत ट्रिप होकर घर की पूरी वायरिंग को जलने से बचाने वाली आधुनिक डिवाइस।",
+        fault: "⚠️ बिना लोड के भी बार-बार ट्रिप होना या अंदर से खट-खट की आवाज।"
+      },
+      {
+        id: "p_kitkat_fuse",
+        cat: "safety",
+        icon: "🧱",
+        name: "Kit-Kat Porcelain Fuse",
+        nameHi: "किटकैट चीनी मिट्टी फ्यूज",
+        specs: "16A, 32A, 64A, 415V, Ceramic Body",
+        desc: "Fireproof ceramic rewireable main fuse providing primary overcurrent protection at meter boards.",
+        descHi: "मेन डिस्ट्रीब्यूशन बोर्ड और मीटर के पास लगने वाला अग्निरोधक पोर्सिलेन सुरक्षा फ्यूज।",
+        fault: "⚠️ गलत मोटा तार बांधने से फॉल्ट पर फ्यूज न उड़ना और वायरिंग जलना।"
+      },
+      {
+        id: "p_switch_fuse",
+        cat: "safety",
+        icon: "🛡️",
+        name: "Switch-Type Modular Fuse",
+        nameHi: "स्विच टाइप मॉड्यूलर फ्यूज (6A/16A)",
+        specs: "6A/16A, Glass Cartridge Fuse",
+        desc: "Board-mounted safety unit holding a fast-blow glass fuse to shield individual switchboards.",
+        descHi: "स्विच बोर्ड के अंदर लगने वाला छोटा फ्यूज जो बोर्ड के सभी उपकरणों को ओवरलोड से बचाता है।",
+        fault: "⚠️ ग्लास फ्यूज का तार टूट जाना जिससे पूरे बोर्ड की बिजली बंद हो जाए।"
+      },
+      {
+        id: "p_switch_regulator",
+        cat: "regulators",
+        icon: "🌀",
+        name: "Switch-Type Fan Regulator",
+        nameHi: "स्विच टाइप फैन रेगुलेटर (हम-फ्री)",
+        specs: "1-Module Step-Type (1 to 5 Speed)",
+        desc: "Silent electronic capacitor regulator that modulates fan speed without power loss or buzzing noise.",
+        descHi: "सीलिंग फैन की गति को 1 से 5 स्टेप में बिना किसी गुनगुनाहट आवाज के कंट्रोल करने वाला रेगुलेटर।",
+        fault: "⚠️ नॉब फ्री हो जाना या पंखा सिर्फ 5 नंबर (फुल स्पीड) पर चलना।"
+      },
+      {
+        id: "p_socket_regulator",
+        cat: "regulators",
+        icon: "🌀",
+        name: "Socket-Type Fan Regulator",
+        nameHi: "सॉकेट टाइप रोटरी रेगुलेटर",
+        specs: "2-Module Wide Fit for Older Boards",
+        desc: "Larger rotary regulator designed to fit directly into a standard socket cutout on older boards.",
+        descHi: "पुराने लकड़ी या सनमाइका बोर्डों में सॉकेट की जगह पर लगने वाला 2-मॉड्यूल चौड़ा रेगुलेटर।",
+        fault: "⚠️ रेगुलेटर का बहुत अधिक गर्म होना या जलने की गंध।"
+      },
+      {
+        id: "p_junction_4way",
+        cat: "regulators",
+        icon: "📦",
+        name: "4-Way PVC Conduit Junction Box",
+        nameHi: "4-वे पीवीसी जंक्शन बॉक्स",
+        specs: "20mm / 25mm Heavy Duty Conduit",
+        desc: "Junction enclosure splitting wiring conduit runs across 4 directions in ceiling and wall slabs.",
+        descHi: "दीवार व छत की पाइपिंग में 4 दिशाओं में तारों को सुरक्षित बांटने व मोड़ने हेतु जंक्शन बॉक्स।",
+        fault: "⚠️ ढक्कन खुला रहने से नमी, धूल या चूहों द्वारा तार काटना।"
+      },
+      {
+        id: "p_round_cover",
+        cat: "regulators",
+        icon: "⚪",
+        name: "Round Sheet & Ceiling Cover",
+        nameHi: "राउंड शीट व सीलिंग फैन कवर",
+        specs: "Polycarbonate Round Protective Plate",
+        desc: "Aesthetic protective cover plate installed over junction boxes and ceiling fan anchor points.",
+        descHi: "छत के पंखा बॉक्स और जंक्शन बॉक्स को ढककर सुंदर व सुरक्षित फिनिशिंग देने वाली राउंड प्लेट।",
+        fault: "⚠️ ढक्कन टूटा होना या तार खुले लटकना।"
+      }
+    ];
+
+    const S = [
+      {
+        id: "elec",
+        i: "⚡",
+        n: ["इलेक्ट्रिकल सर्विस", "Electrical Services"],
+        p: 200,
+        cat: "elec",
+        l: [
+          ["घर और ऑफिस की सम्पूर्ण वायरिंग", "लाइट, पंखे और स्विच बोर्ड फिटिंग", "MCB, RCCB और कॉपर अर्थिंग", "इन्वर्टर और UPS बैकअप सेटअप", "सोलर पैनल इंस्टॉलेशन व मेंटेनेंस", "मोटर, सबमर्सिबल पंप और जनरेटर", "इलेक्ट्रिकल पैनल रिपेयरिंग", "मशीनों की इलेक्ट्रिकल वायरिंग"],
+          ["Complete home & office concealed wiring", "Lights, ceiling fans & modular switchboards", "MCB, RCCB & copper earthing", "Inverter & UPS backup setup", "Solar panel installation & maintenance", "Motors, submersible pumps & generators", "Electrical distribution panel repair", "Machine electrical service & wiring"]
+        ]
+      },
+      {
+        id: "mobile",
+        i: "📱",
+        n: ["मोबाइल सर्विस", "Mobile Services"],
+        p: 300,
+        cat: "device",
+        l: [
+          ["Android मोबाइल हार्डवेयर रिपेयर", "ओरिजिनल डिस्प्ले और टच रिपेयर", "बैटरी और फास्ट चार्जिंग जैक बदलना", "लाउडस्पीकर और माइक्रोफोन समाधान", "मोबाइल सॉफ्टवेयर फ्लैशिंग व इंस्टॉलेशन", "OS अपडेट और सॉफ्टवेयर ट्रबलशूटिंग", "खोया डेटा बैकअप और रिकवरी"],
+          ["Android mobile hardware repair", "Original display & touch replacement", "Battery & fast charging jack replacement", "Loudspeaker & microphone troubleshooting", "Mobile software flashing & installation", "OS update & bootloop troubleshooting", "Data backup & recovery"]
+        ]
+      },
+      {
+        id: "computer",
+        i: "💻",
+        n: ["कंप्यूटर और लैपटॉप सर्विस", "Computer & Laptop Services"],
+        p: 400,
+        cat: "it",
+        l: [
+          ["मदरबोर्ड चिप-लेवल रिपेयर", "हाई-स्पीड RAM और NVMe SSD अपग्रेड", "लैपटॉप कीबोर्ड और स्क्रीन रिप्लेसमेंट", "CPU/GPU ओवरहीटिंग व थर्मल पेस्ट", "प्रिंटर, स्कैनर व वाई-फाई ड्राइवर सेटअप", "Windows 10/11 व Linux इंस्टॉलेशन", "एंटीवायरस और मैलवेयर क्लीनअप", "हार्ड डिस्क से डेटा रिकवरी"],
+          ["Motherboard chip-level repair", "High-speed RAM & NVMe SSD upgrade", "Laptop keyboard & screen replacement", "CPU/GPU overheating & thermal paste", "Printer, scanner & Wi-Fi driver setup", "Windows 10/11 & Linux fresh installation", "Antivirus & malware removal", "Hard drive data recovery"]
+        ]
+      },
+      {
+        id: "network",
+        i: "🌐",
+        n: ["नेटवर्किंग सर्विस", "Networking Services"],
+        p: 500,
+        cat: "it",
+        l: [
+          ["ऑफिस व होम LAN/WAN नेटवर्किंग", "डुअल-बैंड Wi-Fi राउटर इंस्टॉलेशन", "मैनेज्ड नेटवर्क स्विच कॉन्फ़िगरेशन", "CAT6/CAT6A ईथरनेट केबलिंग व पंचिंग", "लोकल फाइल सर्वर व NAS इंस्टॉलेशन", "इंटरनेट ड्रॉप व नेटवर्क ट्रबलशूटिंग", "ऑफिस और स्कूल नेटवर्क सेटअप"],
+          ["Office & home LAN/WAN networking", "Dual-band Wi-Fi router setup", "Managed network switch configuration", "CAT6/CAT6A structured ethernet cabling", "Local file server & NAS installation", "Internet speed drops & network troubleshooting", "Complete office & lab network setup"]
+        ]
+      },
+      {
+        id: "cctv",
+        i: "📹",
+        n: ["CCTV और सिक्योरिटी", "CCTV & Security"],
+        p: 1500,
+        cat: "sec",
+        l: [
+          ["HD और 4K IP कैमरा इंस्टॉलेशन", "DVR और NVR 24/7 रिकॉर्डिंग सेटअप", "मोबाइल फोन पर लाइव कैमरा व्यू", "रिमोट मॉनिटरिंग और मोशन अलर्ट", "बायोमेट्रिक फिंगरप्रिंट अटेंडेंस मशीन", "इलेक्ट्रॉनिक एक्सेस कंट्रोल डोर लॉक", "पुराने CCTV कैमरों की सर्विसिंग"],
+          ["HD & 4K IP camera installation", "DVR & NVR 24/7 recording setup", "Live mobile phone camera viewing", "Remote monitoring & motion alerts", "Biometric fingerprint attendance machine", "Electronic access control door lock", "Maintenance & repair of existing CCTV"]
+        ]
+      },
+      {
+        id: "industrial",
+        i: "🏭",
+        n: ["इंडस्ट्रियल मशीन मेंटेनेंस", "Industrial Machine Maintenance"],
+        p: 1000,
+        cat: "ind",
+        l: [
+          ["फैक्ट्री मशीन इंस्टॉलेशन", "LT/HT इलेक्ट्रिकल कंट्रोल पैनल मेंटेनेंस", "3-फेज मोटर और हैवी पंप मेंटेनेंस", "VFD (ड्राइव) इंस्टॉलेशन व प्रोग्रामिंग", "PLC और रिले ऑटोमेशन ट्रबलशूटिंग", "प्रॉक्सिमिटी व टेम्परेचर सेंसर फिटिंग", "प्रिवेंटिव मेंटेनेंस कॉन्ट्रैक्ट (AMC)", "मशीन फॉल्ट डिटेक्शन और सुधार"],
+          ["Factory machine electrical installation", "LT/HT control panel maintenance", "3-phase motors & heavy pumps service", "VFD drive installation & parameter setup", "PLC & relay automation troubleshooting", "Proximity & temperature sensor setup", "Preventive Maintenance Contracts (AMC)", "Breakdown fault detection & repair"]
+        ]
+      },
+      {
+        id: "other",
+        i: "🛠",
+        n: ["अन्य टेक्निकल सर्विस", "Other Technical Services"],
+        p: 300,
+        cat: "other",
+        l: [
+          ["लेजर व इंकजेट प्रिंटर रिपेयर", "बारकोड व डॉक्यूमेंट स्कैनर रिपेयर", "हॉल और क्लासरूम प्रोजेक्टर इंस्टॉलेशन", "स्मार्ट TV वॉल माउंटिंग व सेटअप", "IoT आधारित होम ऑटोमेशन स्विच", "साउंड सिस्टम और PA एम्पलीफायर", "इलेक्ट्रॉनिक उपकरणों का जनरल मेंटेनेंस"],
+          ["Laser & inkjet printer repair", "Barcode & document scanner repair", "Hall & classroom projector setup", "Smart TV wall mounting & connectivity", "IoT smart home automation switches", "Sound systems & PA amplifier wiring", "General electronic device servicing"]
+        ]
+      }
+    ];
+
+    const T = {
+      hi: {
+        topbar: "⚡ PN Electronics (प्रमोद इलेक्ट्रिकल एवं टेक्निकल सर्विस) | बालाघाट (म.प्र.)",
+        cta: "अभी बुक करें",
+        sub: "इलेक्ट्रिकल, इलेक्ट्रॉनिक्स, कंप्यूटर, IT, नेटवर्किंग व CCTV – Your Technology Partner for a Better Tomorrow",
+        by: "PN Electronics — बालाघाट में भरोसेमंद इलेक्ट्रिकल, इलेक्ट्रॉनिक्स, कंप्यूटर, IT व नेटवर्किंग कंपनी।",
+        callnow: "कॉल करें",
+        chatwa: "WhatsApp चैट",
+        viewcalc: "खर्च कैलकुलेटर",
+        nav_parts: "सामग्री गाइड",
+        orbit_mode_tools: "टूल्स (Tools)",
+        orbit_mode_parts: "सामग्री (Parts)",
+        orbit_hint: "⚡ घूमते टूल्स/सामग्री पर क्लिक करके विस्तृत जानकारी देखें",
+        orbit_pause: "घूमना रोकें",
+        orbit_play: "घूमना चालू करें",
+        modal_purpose_heading: "🎯 मुख्य उपयोग (Primary Purpose):",
+        modal_safety_heading: "🛡️ सुरक्षा एवं तकनीकी मानक (Safety & Specs):",
+        modal_book_btn: "यह सेवा / पार्ट बुक करें ↗",
+        parts_h2: "इलेक्ट्रिकल सामग्री व पार्ट्स गाइड (Electrical Hardware)",
+        parts_sub: "घर, दुकान व ऑफिस में लगने वाली सभी प्रमुख इलेक्ट्रिकल सामग्री — पार्ट्स को पहचानें, सही रेटिंग जानें और रिप्लेसमेंट या नई फिटिंग के लिए संपर्क करें:",
+        parts_all: "सभी सामग्री (All)",
+        parts_holders: "💡 बल्ब होल्डर (Holders)",
+        parts_switches: "🔌 स्विच, सॉकेट व प्लग",
+        parts_safety: "🛡️ MCB व फ्यूज",
+        parts_regulators: "🌀 रेगुलेटर व जंक्शन",
+        part_book_btn: "बदलवाएं / बुक करें ↗",
+        chart_banner_title: "📸 ओरिजिनल इलेक्ट्रिकल एक्सेसरीज़ चार्ट",
+        chart_banner_desc: "स्विच, सॉकेट, होल्डर, किटकैट फ्यूज, एमसीबी व रेगुलेटर का सम्पूर्ण सचित्र संदर्भ चार्ट।",
+        chart_view_btn: "🔍 ओरिजिनल चार्ट देखें (Full Chart)",
+        kt: "मुख्य विशेषताएं (Key Highlights)",
+        k: [
+          "एक ही जगह हर तकनीकी समाधान: बिजली, मोबाइल, कंप्यूटर, नेटवर्क, CCTV और मशीन मेंटेनेंस।",
+          "घर, दुकान, शोरूम, ऑफिस और फैक्ट्री – सभी के लिए योग्य और अनुभवी तकनीशियन।",
+          "पारदर्शी और उचित दरें, काम से पहले स्पष्ट अनुमान और ऑन-साइट/होम सर्विस की सुविधा।"
+        ],
+        h1: "हमारी सभी सर्विसेज़",
+        h1p: "अपनी आवश्यकता के अनुसार सर्विस चुनें। हर सर्विस के अंतर्गत आने वाले मुख्य कार्य:",
+        sv: "मुख्य कार्य",
+        h2: "सर्विस कैलकुलेटर (अनुमानित खर्च)",
+        l1: "सर्विस का प्रकार चुनें",
+        l2: "संख्या (पॉइंट / उपकरण / यूनिट्स)",
+        estlabel: "अनुमानित लेबर खर्च:",
+        sendest: "WhatsApp पर भेजें",
+        cn: "* नोट: यह केवल मानक लेबर शुल्क का प्रारंभिक अनुमान है। वास्तविक खर्च निरीक्षण और आवश्यक सामग्री के बाद तय होता है।",
+        h3: "ऑनलाइन सर्विस बुकिंग",
+        l3: "आपका नाम *",
+        l4: "मोबाइल नंबर *",
+        l5: "पसंदीदा तारीख",
+        l6: "पता / समस्या का विवरण",
+        sub2: "WhatsApp पर बुकिंग भेजें ↗",
+        h4: "मेरी हालिया सर्विस हिस्ट्री (My Bookings)",
+        h5: "गैलरी – हमारे किए गए काम",
+        gn: "बालाघाट और आसपास के क्षेत्रों में उच्च गुणवत्ता के साथ पूर्ण किए गए प्रोजेक्ट्स।",
+        g: ["हाउस व पैनल वायरिंग", "CCTV व NVR सेटअप", "ऑफिस नेटवर्किंग रैक", "चिप-लेवल मोबाइल रिपेयर"],
+        h7: "अक्सर पूछे जाने वाले सवाल",
+        fq: [
+          ["क्या आप घर या ऑफिस आकर सर्विस देते हैं?", "हाँ, बालाघाट शहर और नजदीकी क्षेत्रों में हम आपके पते पर आकर ऑन-साइट सर्विस और रिपेयरिंग प्रदान करते हैं।"],
+          ["खर्च का अनुमान पहले कैसे पता चलेगा?", "ऊपर दिए गए कैलकुलेटर से आप तुरंत लेबर खर्च देख सकते हैं। विस्तृत काम या वायरिंग के लिए साइट निरीक्षण के बाद स्पष्ट कोटेशन दिया जाता है।"],
+          ["क्या आप फैक्ट्री और कंपनियों के लिए मशीन मेंटेनेंस करते हैं?", "हाँ, हम 3-फेज मोटर, VFD, PLC, कंट्रोल पैनल और औद्योगिक मशीनों का प्रिवेंटिव व ब्रेकडाउन मेंटेनेंस करते हैं।"],
+          ["काम बुक करने का सबसे तेज़ तरीका क्या है?", "आप नीचे दिया गया फॉर्म भर सकते हैं या सीधे +91 94169 81947 पर कॉल या WhatsApp कर सकते हैं।"]
+        ],
+        h6: "संपर्क जानकारी",
+        addr: ADDR,
+        ct: "क्या आपको भरोसेमंद टेक्निकल सर्विस पार्टनर चाहिए?",
+        cp: "आज ही ऑनलाइन बुकिंग करें या WhatsApp पर सीधे बात करें।",
+        rights: "सर्वाधिकार सुरक्षित।",
+        nav: ["सर्विसेज़", "सामग्री गाइड", "कैलकुलेटर", "बुकिंग", "गैलरी", "FAQ", "संपर्क"],
+        need: "⚠️ कृपया नाम और मोबाइल नंबर अवश्य भरें!",
+        ok: "✅ बुकिंग सुरक्षित हुई! WhatsApp खुल रहा है…",
+        wa: "WhatsApp खुल रहा है…",
+        msg: "नई टेक्निकल सर्विस बुकिंग",
+        mobcall: "कॉल करें",
+        mobbook: "काम बुक करें",
+        filterAll: "सभी (All)",
+        filterElec: "⚡ इलेक्ट्रिकल",
+        filterDevice: "📱 मोबाइल",
+        filterIT: "💻 कंप्यूटर व नेटवर्क",
+        filterSec: "📹 CCTV सिक्योरिटी",
+        filterInd: "🏭 इंडस्ट्रियल"
+      },
+      en: {
+        topbar: "⚡ PN Electronics | Electrical • Electronics • IT • Networking | Balaghat (M.P.)",
+        cta: "Book Now",
+        sub: "Electrical, Electronics, Computer, IT, CCTV & Networking Solutions — Your Technology Partner for a Better Tomorrow",
+        by: "PN Electronics — Your trusted Electrical, Electronics, Computer, IT & Networking service company in Balaghat.",
+        callnow: "Call Now",
+        chatwa: "WhatsApp Chat",
+        viewcalc: "Cost Calculator",
+        nav_parts: "Parts Guide",
+        orbit_mode_tools: "Tools",
+        orbit_mode_parts: "Materials",
+        orbit_hint: "⚡ Click any orbiting tool/material to inspect full details",
+        orbit_pause: "Pause Orbit",
+        orbit_play: "Resume Orbit",
+        modal_purpose_heading: "🎯 Primary Purpose & Application:",
+        modal_safety_heading: "🛡️ Safety Standards & Accuracy:",
+        modal_book_btn: "Book This Service / Part ↗",
+        parts_h2: "Electrical Accessories & Materials Guide",
+        parts_sub: "Standard electrical components used in homes, shops and offices. Identify parts, learn their ratings, and book replacements:",
+        parts_all: "All Materials",
+        parts_holders: "💡 Bulb Holders",
+        parts_switches: "🔌 Switches & Sockets",
+        parts_safety: "🛡️ MCB & Safety Fuse",
+        parts_regulators: "🌀 Regulators & Junction",
+        part_book_btn: "Book Replacement ↗",
+        chart_banner_title: "📸 Original Electrical Accessories Chart",
+        chart_banner_desc: "Full photographic reference chart for switches, sockets, holders, fuses, and regulators.",
+        chart_view_btn: "🔍 View Full Chart",
+        kt: "Key Highlights",
+        k: [
+          "One-stop destination: Electrical, Mobile, Computer, Networking, CCTV, and Machine maintenance.",
+          "Experienced professionals for homes, retail shops, offices, and industrial plants.",
+          "Transparent and fair pricing, upfront estimates, and prompt doorstep/on-site service."
+        ],
+        h1: "Our Complete Services",
+        h1p: "Select from our specialized service verticals. Every service includes standard safety protocols:",
+        sv: "Key Services Included",
+        h2: "Service Cost Calculator",
+        l1: "Select Service",
+        l2: "Quantity (Points / Devices / Units)",
+        estlabel: "Estimated Labour Cost:",
+        sendest: "Send on WhatsApp",
+        cn: "* Note: Estimate only for standard labor. Final rate is confirmed after on-site or in-shop inspection.",
+        h3: "Online Service Booking",
+        l3: "Your Name *",
+        l4: "Mobile Number *",
+        l5: "Preferred Date",
+        l6: "Address / Problem Details",
+        sub2: "Send Booking via WhatsApp ↗",
+        h4: "My Recent Service History",
+        h5: "Gallery – Our Work & Equipment",
+        gn: "High quality workmanship across residential, commercial and industrial setups in Balaghat.",
+        g: ["Wiring & Control Panels", "CCTV & NVR Systems", "Networking Rack Setup", "Chip-Level Mobile Repair"],
+        h7: "Frequently Asked Questions",
+        fq: [
+          ["Do you provide doorstep and on-site service?", "Yes. In Balaghat city and surrounding suburban areas, we provide doorstep diagnosis, repair, and installation services."],
+          ["How do I know the service cost beforehand?", "You can check initial estimates using our online calculator above. For comprehensive wiring or industrial jobs, we provide upfront quotes after inspection."],
+          ["Do you handle industrial machines and commercial plant maintenance?", "Yes. We maintain 3-phase motors, control panels, VFDs, PLCs, and preventive automation systems."],
+          ["What is the fastest way to book a technician?", "Simply fill the booking form below or directly call / WhatsApp us at +91 94169 81947."]
+        ],
+        h6: "Contact Information",
+        addr: ADDR,
+        ct: "Need a Reliable Technical Service Partner?",
+        cp: "Book online today or message us directly on WhatsApp.",
+        rights: "All rights reserved.",
+        nav: ["Services", "Parts Guide", "Calculator", "Booking", "Gallery", "FAQ", "Contact"],
+        need: "⚠️ Please enter your Name and Mobile Number!",
+        ok: "✅ Booking saved! Opening WhatsApp…",
+        wa: "Opening WhatsApp…",
+        msg: "New Technical Service Booking",
+        mobcall: "Call",
+        mobbook: "Book",
+        filterAll: "All Services",
+        filterElec: "⚡ Electrical",
+        filterDevice: "📱 Mobile",
+        filterIT: "💻 Computer & IT",
+        filterSec: "📹 CCTV & Security",
+        filterInd: "🏭 Industrial"
+      }
+    };
+
+    let L = "en";
+    let activeFilter = "all";
+    let activePartsFilter = "all";
+    let currentOrbitMode = "tools"; // 'tools' or 'parts'
+    let isOrbitPaused = false;
+
+    const $ = id => document.getElementById(id);
+    const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    const ids = ["services", "parts", "calc", "book", "gallery", "faq", "contact"];
+
+    /* ==========================================================================
+       DARK / LIGHT THEME TOGGLE
+       ========================================================================== */
+    const themeBtn = $("themeToggle");
+    function setTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      try { localStorage.setItem("pramod_theme", theme); } catch (e) {}
+    }
+
+    const savedTheme = localStorage.getItem("pramod_theme") || 
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    setTheme(savedTheme);
+
+    if (themeBtn) {
+      themeBtn.onclick = () => {
+        const cur = document.documentElement.getAttribute("data-theme");
+        setTheme(cur === "dark" ? "light" : "dark");
+      };
+    }
+
+    /* ==========================================================================
+       RENDER ORBIT LOGO WITH TOOLS / PARTS MODES
+       ========================================================================== */
+    function buildOrbit() {
+      const ring = $("orbitRing");
+      const chips = $("orbitChips");
+      if (!ring || !chips) return;
+
+      const dataSource = currentOrbitMode === "tools" ? TOOLS_DATA : ORBIT_PARTS_DATA;
+      const total = dataSource.length;
+      ring.innerHTML = "";
+      chips.innerHTML = "";
+
+      dataSource.forEach((item, idx) => {
+        const angleDeg = idx * (360 / total);
+        const rad = (angleDeg * Math.PI) / 180;
+        
+        const xPct = 50 + 50 * Math.cos(rad);
+        const yPct = 50 + 50 * Math.sin(rad);
+
+        const node = document.createElement("div");
+        node.className = "orbit-tool-node";
+        node.style.left = `${xPct.toFixed(2)}%`;
+        node.style.top = `${yPct.toFixed(2)}%`;
+        node.innerHTML = `<span>${item.icon}</span>`;
+        node.title = L === "hi" ? item.nameHi : item.name;
+
+        node.onclick = (e) => {
+          e.stopPropagation();
+          openDetailModal(item);
+        };
+        ring.appendChild(node);
+
+        // Mobile Quick Chip
+        const chip = document.createElement("button");
+        chip.className = "orbit-chip";
+        chip.type = "button";
+        const shortName = L === "hi" ? item.nameHi.split(" ")[0] : item.name.split(" ")[0];
+        chip.innerHTML = `<span>${item.icon}</span> <span>${shortName}</span>`;
+        chip.onclick = () => openDetailModal(item);
+        chips.appendChild(chip);
+      });
+
+      const countEl = $("orbitItemCount");
+      if (countEl) {
+        countEl.textContent = `${total} ${currentOrbitMode === 'tools' ? (L === 'hi' ? 'टूल्स सक्रिय' : 'Tools in Orbit') : (L === 'hi' ? 'पार्ट्स सक्रिय' : 'Parts in Orbit')}`;
+      }
+    }
+
+    // Orbit Mode Buttons Handler
+    const orbitModeTools = $("orbitModeTools");
+    const orbitModeParts = $("orbitModeParts");
+
+    if (orbitModeTools && orbitModeParts) {
+      orbitModeTools.onclick = () => {
+        currentOrbitMode = "tools";
+        orbitModeTools.classList.add("active");
+        orbitModeParts.classList.remove("active");
+        buildOrbit();
+      };
+
+      orbitModeParts.onclick = () => {
+        currentOrbitMode = "parts";
+        orbitModeParts.classList.add("active");
+        orbitModeTools.classList.remove("active");
+        buildOrbit();
+      };
+    }
+
+    /* Orbit Pause/Play Controller */
+    const orbitToggleBtn = $("orbitToggleBtn");
+    const orbitRing = $("orbitRing");
+    const orbitCtrlText = $("orbitCtrlText");
+
+    function toggleOrbit(pause) {
+      if (typeof pause === "boolean") {
+        isOrbitPaused = pause;
+      } else {
+        isOrbitPaused = !isOrbitPaused;
+      }
+
+      if (orbitRing) {
+        if (isOrbitPaused) {
+          orbitRing.classList.add("paused");
+        } else {
+          orbitRing.classList.remove("paused");
+        }
+      }
+
+      if (orbitCtrlText) {
+        const t = T[L];
+        orbitCtrlText.textContent = isOrbitPaused ? t.orbit_play : t.orbit_pause;
+      }
+      if (orbitToggleBtn) {
+        orbitToggleBtn.innerHTML = isOrbitPaused 
+          ? `▶️ <span id="orbitCtrlText">${T[L].orbit_play}</span>` 
+          : `⏸️ <span id="orbitCtrlText">${T[L].orbit_pause}</span>`;
+      }
+    }
+
+    if (orbitToggleBtn) {
+      orbitToggleBtn.onclick = () => toggleOrbit();
+    }
+
+    const centerLogo = $("orbitCenterLogo");
+    if (centerLogo) {
+      centerLogo.onclick = () => {
+        const src = currentOrbitMode === "tools" ? TOOLS_DATA[0] : ORBIT_PARTS_DATA[0];
+        openDetailModal(src);
+      };
+    }
+
+    /* ==========================================================================
+       DETAIL MODAL HANDLER FOR BOTH TOOLS & PARTS
+       ========================================================================== */
+    const toolModalOverlay = $("toolModalOverlay");
+    const toolModalClose = $("toolModalClose");
+    const modalCloseBtn = $("modalCloseBtn");
+    const modalBookBtn = $("modalBookBtn");
+
+    function openDetailModal(item) {
+      const isHi = L === "hi";
+
+      $("modalToolIcon").textContent = item.icon || "⚡";
+      $("modalToolTag").textContent = isHi ? (item.tagHi || item.tag) : item.tag;
+      $("modalToolTitle").textContent = isHi ? (item.nameHi || item.name) : item.name;
+      $("modalToolPurpose").textContent = isHi ? (item.purposeHi || item.descHi || item.desc) : (item.purpose || item.desc);
+      $("modalToolSafety").textContent = isHi ? (item.safetyHi || item.specs || item.fault) : (item.safety || item.specs);
+      
+      $("modalPurposeHeading").textContent = T[L].modal_purpose_heading;
+      $("modalSafetyHeading").textContent = T[L].modal_safety_heading;
+
+      if (modalBookBtn) {
+        modalBookBtn.onclick = () => {
+          closeDetailModal();
+          selectServiceForBooking(item.serviceIdx || 0);
+          const noteArea = $("bt");
+          if (noteArea) {
+            noteArea.value = (isHi ? `पार्ट/काम: ${item.nameHi || item.name}` : `Service/Part: ${item.name}`);
+          }
+        };
+      }
+
+      toggleOrbit(true);
+      toolModalOverlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeDetailModal() {
+      toolModalOverlay.classList.remove("active");
+      document.body.style.overflow = "";
+      toggleOrbit(false);
+    }
+
+    if (toolModalClose) toolModalClose.onclick = closeDetailModal;
+    if (modalCloseBtn) modalCloseBtn.onclick = closeDetailModal;
+    if (toolModalOverlay) {
+      toolModalOverlay.onclick = (e) => {
+        if (e.target === toolModalOverlay) closeDetailModal();
+      };
+    }
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && toolModalOverlay.classList.contains("active")) {
+        closeDetailModal();
+      }
+    });
+
+    /* ==========================================================================
+       RENDER ELECTRICAL PARTS CATALOG SECTION
+       ========================================================================== */
+    function renderPartsCatalog() {
+      const filterBar = $("partsFilterBar");
+      const grid = $("partsGrid");
+      if (!filterBar || !grid) return;
+
+      const t = T[L];
+      const isHi = L === "hi";
+
+      const partFilters = [
+        { id: "all", label: t.parts_all },
+        { id: "holders", label: t.parts_holders },
+        { id: "switches", label: t.parts_switches },
+        { id: "safety", label: t.parts_safety },
+        { id: "regulators", label: t.parts_regulators }
+      ];
+
+      filterBar.innerHTML = partFilters.map(f => 
+        `<button class="filter-btn ${activePartsFilter === f.id ? 'active' : ''}" onclick="setPartsFilter('${f.id}')">${f.label}</button>`
+      ).join("");
+
+      const filtered = ALL_ELECTRICAL_PARTS.filter(p => activePartsFilter === "all" || p.cat === activePartsFilter);
+
+      grid.innerHTML = filtered.map(p => `
+        <article class="part-card">
+          <div class="part-card-header">
+            <div class="part-icon-box">${p.icon}</div>
+            <div>
+              <div class="part-title">${isHi ? p.nameHi : p.name}</div>
+              <span class="part-rating-badge">${p.specs}</span>
+            </div>
+          </div>
+          <p class="part-desc">${isHi ? p.descHi : p.desc}</p>
+          <div class="part-fault-hint">${isHi ? p.fault : p.fault.replace("⚠️", "Common issue:")}</div>
+          <div class="part-footer">
+            <button class="btn btn-sm o" type="button" onclick='openDetailModal(${JSON.stringify(p)})'>ℹ️ Details</button>
+            <a href="#book" class="btn btn-sm" onclick="bookPart('${esc(isHi ? p.nameHi : p.name)}')">${t.part_book_btn}</a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function setPartsFilter(filterId) {
+      activePartsFilter = filterId;
+      renderPartsCatalog();
+    }
+
+    function bookPart(partName) {
+      selectServiceForBooking(0); // 0 is Electrical
+      const bt = $("bt");
+      if (bt) {
+        bt.value = L === "hi" ? `बदलवाना है: ${partName}` : `Replacement required: ${partName}`;
+      }
+    }
+
+    /* ==========================================================================
+       RENDER MAIN APPLICATION
+       ========================================================================== */
+    function render() {
+      const t = T[L], k = L === "hi" ? 0 : 1;
+      document.documentElement.lang = L;
+
+      // Update text nodes
+      document.querySelectorAll("[data-i]").forEach(e => {
+        if (t[e.dataset.i]) e.textContent = t[e.dataset.i];
+      });
+
+      $("bh").className = L === "hi" ? "on" : "";
+      $("be").className = L === "en" ? "on" : "";
+
+      // Navigation
+      $("nav").innerHTML = ids.slice(0, 5).map((d, j) => `<a href="#${d}">${t.nav[j]}</a>`).join("");
+      $("subnav").innerHTML = ids.map((d, j) => `<a href="#${d}">${t.nav[j]}</a>`).join("");
+
+      // Key points
+      $("kl").innerHTML = t.k.map(x => `<li>${x}</li>`).join("");
+
+      // Build Orbit
+      buildOrbit();
+
+      // Render Parts Catalog
+      renderPartsCatalog();
+
+      // Services Filter Bar
+      const filters = [
+        { id: "all", label: t.filterAll },
+        { id: "elec", label: t.filterElec },
+        { id: "device", label: t.filterDevice },
+        { id: "it", label: t.filterIT },
+        { id: "sec", label: t.filterSec },
+        { id: "ind", label: t.filterInd }
+      ];
+      $("filterBar").innerHTML = filters.map(f => 
+        `<button class="filter-btn ${activeFilter === f.id ? 'active' : ''}" onclick="setFilter('${f.id}')">${f.label}</button>`
+      ).join("");
+
+      // Services Grid
+      const filteredServices = S.filter(s => activeFilter === "all" || s.cat === activeFilter);
+      $("sg").innerHTML = filteredServices.map((s) => `
+        <article class="svc-card">
+          <div class="pic">
+            <svg class="ck" viewBox="0 0 400 200" preserveAspectRatio="none">
+              <g fill="none" stroke="#fff" stroke-width="2">
+                <path d="M0 30H100L130 60H260L290 30H400M0 100H70L100 130H210M210 130V200M400 110H310L280 140H210M0 170H130M320 0V30M70 0V30"/>
+              </g>
+              <g fill="#94e5b9">
+                <circle cx="100" cy="30" r="5"/>
+                <circle cx="260" cy="60" r="5"/>
+                <circle cx="210" cy="130" r="5"/>
+                <circle cx="310" cy="110" r="5"/>
+              </g>
+            </svg>
+            <span class="ic">${s.i}</span>
+          </div>
+          <div class="svc-body">
+            <h3>
+              <span>${s.n[k]}</span>
+              <span class="svc-price-tag">₹${s.p}+</span>
+            </h3>
+            <b>${t.sv}:</b>
+            <ul>
+              ${s.l[k].map(item => `<li>${item}</li>`).join("")}
+            </ul>
+            <div class="svc-footer">
+              <span style="font-size:12.5px;color:var(--mu);">Balaghat Service</span>
+              <a href="#book" class="btn btn-sm" onclick="selectServiceForBooking(${S.indexOf(s)})">${t.cta} →</a>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      // Dropdowns
+      const opts = S.map((s, j) => `<option value="${j}">${s.n[k]} (₹${s.p}+)</option>`).join("");
+      const csVal = $("cs").value || 0;
+      const bsVal = $("bs").value || 0;
+      $("cs").innerHTML = opts;
+      $("bs").innerHTML = opts;
+      $("cs").value = csVal;
+      $("bs").value = bsVal;
+
+      // Gallery
+      $("gl").innerHTML = t.g.map((title, j) => `
+        <div>
+          <span style="font-size:52px">${["🔌", "📹", "🌐", "📱"][j]}</span>
+          <span>${title}</span>
+        </div>
+      `).join("");
+
+      // FAQs
+      $("fq").innerHTML = t.fq.map(f => `
+        <details>
+          <summary>${f[0]}</summary>
+          <p>${f[1]}</p>
+        </details>
+      `).join("");
+
+      calc();
+      renderHistory();
+    }
+
+    function setFilter(filterId) {
+      activeFilter = filterId;
+      render();
+    }
+
+    function selectServiceForBooking(index) {
+      $("bs").value = index;
+    }
+
+    /* ==========================================================================
+       CALCULATOR
+       ========================================================================== */
+    function calc() {
+      const s = S[$("cs").value || 0];
+      const q = Math.max(1, parseInt($("cq").value, 10) || 1);
+      const total = s.p * q;
+      $("cr").textContent = "≈ ₹" + total.toLocaleString("en-IN") + " +";
+    }
+
+    $("cs").onchange = $("cq").oninput = calc;
+
+    $("calcWABtn").onclick = () => {
+      const s = S[$("cs").value || 0];
+      const q = Math.max(1, parseInt($("cq").value, 10) || 1);
+      const total = s.p * q;
+      const k = L === "hi" ? 0 : 1;
+      const msg = L === "hi" 
+        ? `नमस्ते प्रमोद जी, मुझे ${s.n[k]} (मात्रा: ${q}) का काम करवाना है। अनुमानित लेबर खर्च ₹${total} आया है। क्या आप विज़िट कर सकते हैं?`
+        : `Hello Pramod ji, I need ${s.n[k]} (Qty: ${q}). Estimated labor is around ₹${total}. Can you confirm your visit availability?`;
+      window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, "_blank");
+    };
+
+    /* ==========================================================================
+       BOOKING & LOCAL STORAGE HISTORY
+       ========================================================================== */
+    function getStoredBookings() {
+      try {
+        return JSON.parse(localStorage.getItem("pramod_local_bookings") || "[]");
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveBooking(r) {
+      const list = getStoredBookings();
+      list.unshift(r);
+      try {
+        localStorage.setItem("pramod_local_bookings", JSON.stringify(list.slice(0, 10)));
+      } catch (e) {}
+      renderHistory();
+    }
+
+    function renderHistory() {
+      const list = getStoredBookings();
+      const container = $("hist");
+      if (!list.length) {
+        container.innerHTML = `<p class="note" style="padding:8px 0;">No past bookings found on this device. When you book a service, it will be listed here.</p>`;
+        return;
+      }
+      container.innerHTML = `
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Service</th>
+              <th>Status</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${list.map(r => `
+              <tr>
+                <td>${esc(r.date)}</td>
+                <td><strong>${esc(r.svc)}</strong></td>
+                <td><span style="color:var(--pr);font-weight:700;">${esc(r.status)}</span></td>
+                <td>${esc(r.note || '—')}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      `;
+    }
+
+    $("clearHistBtn").onclick = () => {
+      localStorage.removeItem("pramod_local_bookings");
+      renderHistory();
+    };
+
+    $("bgo").onclick = () => {
+      const t = T[L];
+      const name = $("bn").value.trim();
+      const mobile = $("bm").value.trim();
+      const svcName = S[$("bs").value].n[1];
+      const date = $("bd").value || new Date().toISOString().slice(0, 10);
+      const note = $("bt").value.trim();
+
+      if (!name || !mobile) {
+        $("bmsg").textContent = t.need;
+        $("bmsg").style.color = "#dc2626";
+        return;
+      }
+
+      const bookingRecord = {
+        name,
+        mobile,
+        svc: svcName,
+        date,
+        note,
+        status: "Submitted",
+        ts: Date.now()
+      };
+
+      saveBooking(bookingRecord);
+
+      $("bmsg").textContent = t.ok;
+      $("bmsg").style.color = "var(--pr)";
+
+      const waMsg = `${t.msg}:\n👤 Name: ${name}\n📞 Mobile: ${mobile}\n⚡ Service: ${svcName}\n📅 Date: ${date}\n📍 Details: ${note || 'None'}`;
+      window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(waMsg)}`, "_blank");
+    };
+
+    /* Language Buttons */
+    $("bh").onclick = () => { L = "hi"; render(); };
+    $("be").onclick = () => { L = "en"; render(); };
+
+    /* Contact Links Setup */
+    const waLink = "https://wa.me/" + PHONE + "?text=" + encodeURIComponent("Hello Pramod ji, I need technical service.");
+    $("wa").href = waLink;
+    $("heroWA").href = waLink;
+    $("ph").innerHTML = `<a href="tel:+${PHONE}">+91 94169 81947</a>`;
+    $("mp").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ADDR);
+
+    /* Mobile Nav Toggle */
+    const menuToggle = $("menuToggle");
+    const mainNav = $("nav");
+    menuToggle.onclick = () => {
+      mainNav.classList.toggle("active");
+      menuToggle.textContent = mainNav.classList.contains("active") ? "✕" : "☰";
+    };
+
+    // Initial render
+    render();
+
+    /* ==========================================================================
+       THREE.JS 3D HERO VISUALIZATION (AMBIENT STARS)
+       ========================================================================== */
+    (function init3D() {
+      const cv = $("c3d");
+      if (!cv || typeof THREE === "undefined") return;
+
+      let r;
+      try {
+        r = new THREE.WebGLRenderer({ canvas: cv, antialias: true, alpha: true });
+      } catch (e) {
+        return;
+      }
+
+      const sc = new THREE.Scene();
+      const cam = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
+      cam.position.z = 9;
+
+      const G = new THREE.Group();
+      sc.add(G);
+
+      const N = 180, pos = new Float32Array(N * 3);
+      for (let i = 0; i < N * 3; i++) pos[i] = (Math.random() - 0.5) * 26;
+      const pg = new THREE.BufferGeometry();
+      pg.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+      const pts = new THREE.Points(pg, new THREE.PointsMaterial({ color: 0x94e5b9, size: 0.05 }));
+      sc.add(pts);
+
+      sc.add(new THREE.AmbientLight(0xffffff, 0.7));
+
+      let mx = 0, my = 0;
+      window.addEventListener("pointermove", e => {
+        mx = e.clientX / window.innerWidth - 0.5;
+        my = e.clientY / window.innerHeight - 0.5;
+      });
+
+      function resize() {
+        const w = cv.clientWidth, h = cv.clientHeight;
+        r.setSize(w, h, false);
+        cam.aspect = w / h;
+        cam.updateProjectionMatrix();
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      const rm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let t = 0, vis = true;
+      new IntersectionObserver(e => vis = e[0].isIntersecting).observe(cv);
+
+      function loop() {
+        requestAnimationFrame(loop);
+        if (!vis || (rm && t > 0.02)) return;
+        t += 0.01;
+        pts.rotation.y = t * 0.04;
+        G.rotation.y += (mx * 0.4 - G.rotation.y) * 0.04;
+        G.rotation.x += (my * 0.3 - G.rotation.x) * 0.04;
+        r.render(sc, cam);
+      }
+      loop();
+    })();
+  </script>
+</body>
+</html>
